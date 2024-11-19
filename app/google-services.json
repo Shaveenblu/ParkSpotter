@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "510445228968",
+    "firebase_url": "https://parkspotter-423207-default-rtdb.firebaseio.com",
+    "project_id": "parkspotter-423207",
+    "storage_bucket": "parkspotter-423207.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510445228968:android:c4464c3d7574ec36d0039d",
+        "android_client_info": {
+          "package_name": "com.s22010151.parkspotter_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYTeUxLqP3n77OWBvvz7e5MqV426teLxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510445228968:android:61cbfba16e71d6b7d0039d",
+        "android_client_info": {
+          "package_name": "com.s22010151.parkspotterapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYTeUxLqP3n77OWBvvz7e5MqV426teLxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

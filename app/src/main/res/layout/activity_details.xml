@@ -1,0 +1,158 @@
+//Details
+    <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:backgroundTint="#314063"
+    tools:context=".Details">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailPlace"
+        android:text="Place"
+        android:layout_marginTop="30dp"
+        android:textSize="24dp"
+        android:layout_gravity = "center"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/detailImage"
+        android:padding="18dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Charge: "
+        android:layout_marginTop="19dp"
+        android:textSize="24dp"
+        android:layout_gravity = "center"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailCharge"
+        android:text="Charge"
+        android:layout_marginTop="14dp"
+        android:textSize="24dp"
+        android:layout_gravity = "center"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Arrival: "
+        android:layout_marginTop="14dp"
+        android:textSize="24dp"
+        android:layout_gravity = "center"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailArrival"
+        android:text="Arrival"
+        android:layout_marginTop="14dp"
+        android:textSize="24dp"
+        android:layout_gravity = "center"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Spots: "
+        android:layout_marginTop="14dp"
+        android:textSize="24dp"
+        android:layout_gravity = "center"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailSpots"
+        android:text="Spots"
+        android:layout_marginTop="14dp"
+        android:textSize="24dp"
+        android:layout_gravity = "center"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/white"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:menu_fab_size="normal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            app:menu_colorPressed="@color/white"
+            app:menu_colorNormal="@color/white"
+            app:menu_icon="@drawable/baseline_add_24"
+            app:menu_openDirection="up"
+            app:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editbtn"
+                android:src="@drawable/edit"
+                app:fab_showShadow="true"
+                app:fab_colorNormal="@color/white"
+                app:fab_size="normal">
+
+            </com.github.clans.fab.FloatingActionButton>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deletebtn"
+                android:src="@drawable/delete"
+                app:fab_showShadow="true"
+                app:fab_colorNormal="@color/white"
+                app:fab_size="normal">
+
+            </com.github.clans.fab.FloatingActionButton>
+        </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:elevation="20dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="#242"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</LinearLayout>

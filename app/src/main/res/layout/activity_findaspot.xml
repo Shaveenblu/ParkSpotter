@@ -1,0 +1,104 @@
+findaspot
+    <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Findaspot">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="410dp"
+        android:layout_height="355dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="250dp"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="25dp"
+        app:cardMaxElevation="19dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchtxt"
+            android:hint="Search Location"
+            app:hintTextColor="#314063"
+            android:layout_width="320dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginStart="15dp"
+            app:boxCornerRadiusBottomEnd="18dp"
+            app:boxCornerRadiusBottomStart="18dp"
+            app:boxCornerRadiusTopEnd="18dp"
+            app:boxCornerRadiusTopStart="18dp"
+            app:boxStrokeColor="#314063"
+            app:counterEnabled="true"
+            app:counterMaxLength="8"
+            app:endIconCheckable="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ScrollView>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="410dp"
+        android:layout_height="409dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="19dp"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="25dp"
+        app:cardMaxElevation="19dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.60"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:elevation="20dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="#242"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

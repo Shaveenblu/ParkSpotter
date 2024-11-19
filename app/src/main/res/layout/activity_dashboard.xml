@@ -1,0 +1,256 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".Dashboard">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="429dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="25dp"
+        app:cardMaxElevation="19dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="251dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="21dp"
+            android:text="Welcome"
+            android:textColor="#303E61"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.397" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="251dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="70dp"
+            android:text="jake"
+            android:textColor="#303E61"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="429dp"
+        android:layout_height="380dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#303E61"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="25dp"
+        app:cardMaxElevation="19dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="190dp"
+            android:width="350dp"
+            android:height="51dp"
+            android:backgroundTint="#FFFF"
+            android:onClick="navigateFindaspot"
+            android:text="Find a Spot"
+            android:textColor="#303E61"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:id="@+id/ihaveaspot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="240dp"
+            android:width="350dp"
+            android:height="51dp"
+            android:backgroundTint="#FFFF"
+            android:onClick="ihaveaspot"
+            android:text="I have a Spot"
+            android:textColor="#303E61"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="265dp"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="25dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="50dp"
+        app:cardMaxElevation="19dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397"
+        >
+
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_margin="25sp"
+        android:columnCount="2"
+        android:orientation="vertical"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.797">
+
+        <Button
+            android:id="@+id/distanceTwoLocations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="10"
+            android:layout_column="0"
+            android:layout_columnWeight="10"
+            android:layout_gravity="center"
+            android:layout_marginEnd="200dp"
+            android:width="170dp"
+            android:height="71dp"
+            android:backgroundTint="#303E61"
+            android:onClick="navigateDistance"
+            android:text="  Map"
+            android:textStyle="bold"
+            app:cornerRadius="18dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="10"
+            android:layout_column="0"
+            android:layout_columnWeight="10"
+            android:layout_gravity="center"
+            android:layout_marginStart="200dp"
+            android:width="170dp"
+            android:height="71dp"
+            android:backgroundTint="#303E61"
+            android:onClick="navigationActivity"
+            android:text="         Your vehicle"
+            android:textStyle="bold"
+            app:cornerRadius="18dp" />
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/imageViewvehicle"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="129dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918"
+        app:srcCompat="@drawable/vehicleimg" />
+    <ImageView
+        android:id="@+id/imageViewmap"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="129dp"
+        android:layout_marginEnd="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918"
+        app:srcCompat="@drawable/map" />
+
+    <Button
+        android:id="@+id/trendingspacesbtn"
+        android:layout_width="369dp"
+        android:layout_height="71dp"
+        android:width="170dp"
+        android:height="171dp"
+        android:backgroundTint="#303E61"
+        android:onClick="navigaterendingSpaces"
+        android:text="Trending spaces"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.998"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:elevation="20dp"
+        app:itemIconSize="20dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="#292"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
