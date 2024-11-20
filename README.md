@@ -80,6 +80,7 @@ Make sure you have the following installed on your machine:
 <ul>
   <summary>Java</summary>
   <summary>Android Studio Hedgehog or later</summary>
+  <summary>Firebase Account</summary>
 </ul>
 
 ## <a name="more">🚀 More</a>
